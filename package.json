@@ -1,0 +1,8 @@
+{
+    "name": "frontend_container",
+    "description": "this will be the frontend container, yo",
+    "author": "Jan Heuck / https://github.com/jnhck",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}

@@ -1,0 +1,6 @@
+# do not upload the node_modules to github so that we can keep the repo smaller
+# the needed modules are installed automatically with "npm -i" using the code in the package.json
+node_modules/ 
+README.md
+config.js
+.github/
