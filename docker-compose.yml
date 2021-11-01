@@ -1,0 +1,19 @@
+version: '3.9'
+
+networks:
+  microservice-network:
+    driver: bridge
+
+services:
+
+  frontend-service:
+    image: jnhck/frontend_cont:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - microservice-network
+
+  time-microservice:
+    image: jnhck/time_microservice_webapi:latest
+    networks: 
+      - microservice-network
