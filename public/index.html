@@ -51,6 +51,7 @@
               <button type="submit" class="btn btn-dark mb-3">Go</button>
             </div>
           </form>
+          <p>For testing: "Europe/Rome", "UTC", or empty</p>
         </div>
       </div>
     </div>
@@ -58,10 +59,10 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title"><i class="fas fa-cloud"></i> Weather Microservice:</h5>
-          <p class="card-text">Get the current weather at a specific location!</p>
-          <form class="row g-2">
+          <p class="card-text">Get the current weather conditions for a specific city!</p>
+          <form action="/api/weather/" method="get" class="row g-2">
             <div class="col-auto">
-              <input type="text" class="form-control" placeholder="Enter a location">
+              <input type="text" class="form-control" placeholder="Enter a city" name="c">
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-dark mb-3">Go</button>

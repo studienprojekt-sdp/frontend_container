@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3.7'
 
 networks:
   microservice-network:
@@ -16,4 +16,9 @@ services:
   time-microservice:
     image: jnhck/time_microservice_webapi:latest
     networks: 
+      - microservice-network
+
+  weather-microservice:
+    image: jnhck/weather_microservice_webapi:latest
+    networks:
       - microservice-network
