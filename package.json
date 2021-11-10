@@ -2,6 +2,7 @@
     "name": "frontend_container",
     "description": "this will be the frontend container, yo",
     "author": "Jan Heuck / https://github.com/jnhck",
+    "type": "module",
     "dependencies": {
         "axios": "^0.24.0",
         "body-parser": "^1.19.0",
