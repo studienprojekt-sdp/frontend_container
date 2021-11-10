@@ -7,8 +7,8 @@ The time- and weather-web-api-microservices can only be reached from within the 
 
 ## Currently build with the help of:
 
-Bootstrap
-nodeJS
-express.js
-axios.js
-FontAwesome
+* Bootstrap
+* nodeJS
+* express.js
+* axios.js
+* FontAwesome
