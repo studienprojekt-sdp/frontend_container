@@ -1,12 +1,10 @@
 {
     "name": "frontend_container",
-    "description": "this will be the frontend container, yo",
+    "description": "frontend container to access the other web-api-microservices in its network",
     "author": "Jan Heuck / https://github.com/jnhck",
     "type": "module",
     "dependencies": {
         "axios": "^0.24.0",
-        "body-parser": "^1.19.0",
-        "express": "^4.17.1",
-        "node-fetch": "^3.0.0"
+        "express": "^4.17.1"
     }
 }
