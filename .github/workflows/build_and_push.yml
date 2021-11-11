@@ -2,6 +2,8 @@ name: Build Image & Push to GHCR
 
 on:   
   push:
+    tags:
+      - v*
 
 env:
   IMAGE_NAME: frontend
