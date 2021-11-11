@@ -1,7 +1,7 @@
 name: Build -> Push to GHCR
 
 on:
-  [pull_request]
+  [push]
 
 jobs:
 
