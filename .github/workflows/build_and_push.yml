@@ -1,12 +1,12 @@
-name: Action Test
+name: Build Image & Push to GHCR
 
 on:   
   push:
-    branches:
-      - main
+    tags:
+      - v*
 
 env:
-  IMAGE_NAME: frontend_test
+  IMAGE_NAME: frontend
 
 jobs:
 
@@ -23,7 +23,6 @@ jobs:
         run: docker build . --file Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
 
       - name: Log in to registry
-        # This is where you will update the PAT to GITHUB_TOKEN
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Push image
