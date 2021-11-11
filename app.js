@@ -30,7 +30,7 @@ app.get("/api/timezone/", function(req, res) {
       res.status(504).send("Error occurred! Reason: " + error.response.data)
     }
     else {
-      res.status(504).send("The time container cannot be reached. Check if it is online.")
+      res.status(504).send("The time container cannot be reached. Check if it is online!")
     }
   });
 });
@@ -54,7 +54,7 @@ app.get("/api/weather/", function(req, res) {
       res.status(504).send("Error occurred! Reason: " + error.response.data)
     }
     else {
-      res.status(504).send("The weather container cannot be reached. Check if it is online.")
+      res.status(504).send("The weather container cannot be reached. Check if it is online!")
     }
   });
 });
