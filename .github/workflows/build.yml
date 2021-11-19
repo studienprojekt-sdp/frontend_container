@@ -1,7 +1,8 @@
 name: Build Image
 
-on:   
+on:
   pull_request:
+    branches: [master]
 
 env:
   IMAGE_NAME: frontend_temp
@@ -16,6 +17,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        
+      - name: Run ESLint
+        run: eslint . --ext .js,.jsx,.ts,.tsx
+        
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.0
 
       - name: Build image
         run: docker build . --file Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
