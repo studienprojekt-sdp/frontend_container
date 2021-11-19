@@ -1,5 +1,4 @@
-# do not upload the node_modules to dockerhub so that we can keep the container smaller
-# the needed modules are installed automatically with npm anyway
 node_modules
 npm-debug.log
+Dockerfile
 .github/
